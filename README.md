@@ -23,13 +23,7 @@ I run a Lenovo Thinkpad T450s with an i7-5600U.
 
 ## APPS I NEED
 1) neovim
-some plugins:
--lazynvim
--telescope
--treesitter
--neotree
--nvimnio
--nvim-dap
+(some plugins: lazynvim, telescope, treesitter, neotree, nvimnio, nvim-dap)
 2) VSCodium
 3) Spotify
 4) Dicord
@@ -60,9 +54,8 @@ some plugins:
 | Action            | Keybind           | Description                           |
 |-------------------|-------------------|---------------------------------------|
 | Kill Window       | `SUPER + Q`       | Close the currently focused window    |
-| Toggle Floating   | `SUPER + V`       | Toggle floating mode for active window|
+| Toggle Floating   | `SUPER + F`       | Toggle floating mode for active window|
 | Toggle Split      | `SUPER + J`       | Toggle split orientation (vertical/horizontal) |
-| Fullscreen        | `SUPER + F`       | Toggle fullscreen mode                |
 
 ---
 
@@ -78,19 +71,19 @@ Use `SUPER + [key]` to change focus between tiled windows:
 
 ---
 
-### 🪟 Move Tiled Window
+### Move Tiled Window
 Use `ALT + SHIFT + [key]` to move a focused window in the specified direction:
 
 | Direction | Keybind         |
 |-----------|-----------------|
-| Left      | `ALT + SHIFT + left` |
-| Right     | `ALT + SHIFT + right` |
-| Up        | `ALT + SHIFT + up` |
-| Down      | `ALT + SHIFT + down` |
+| Left      | `SUPER + SHIFT + left` |
+| Right     | `SUPER + SHIFT + right` |
+| Up        | `SUPER + SHIFT + up` |
+| Down      | `SUPER + SHIFT + down` |
 
 ---
 
-### 📏 Resize Tiled Window
+### Resize Tiled Window
 Use `SUPER + ALT + [key]` to resize the focused window:
 
 | Direction | Keybind              | Action       |
@@ -102,7 +95,7 @@ Use `SUPER + ALT + [key]` to resize the focused window:
 
 ---
 
-### 🧲 Move Floating Window
+### Move Floating Window
 Use `SUPER + CTRL + [key]` to move floating windows:
 
 | Direction | Keybind              |
@@ -116,3 +109,5 @@ Use `SUPER + CTRL + [key]` to move floating windows:
 
 ## Credits
 - **[haya/hayyaoe](https://github.com/hayyaoe)**
+- **[cxOrz (for waybar)](https://github.com/cxOrz/dotfiles-hyprland)**
+- **[LierB / Bina (for waybar colors | pywal)](https://github.com/LierB/dotfiles)**

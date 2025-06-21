@@ -1,7 +1,9 @@
 # helia 2025 arch rice
 welcome to my 2025 rice repository! feel free to look around at what I use to rice my Arch(btw) install.
 
-THIS IS BASICALLY A FORK OF [Zenities Hyrland](https://github.com/hayyaoe/zenities). I started ricing on Fedora then on Arch because of this rice! 
+THIS IS BASICALLY A FORK OF [Zenities Hyrland](https://github.com/hayyaoe/zenities). 
+
+I started ricing on Fedora then on Arch because of this rice! 
 
 ---
 ## System Details
@@ -21,13 +23,13 @@ I run a Lenovo Thinkpad T450s with an i7-5600U.
 
 ## APPS I NEED
 1) neovim
-    some plugins:
-    -lazynvim
-    -telescope
-    -treesitter
-    -neotree
-    -nvimnio
-    -nvim-dap
+some plugins:
+-lazynvim
+-telescope
+-treesitter
+-neotree
+-nvimnio
+-nvim-dap
 2) VSCodium
 3) Spotify
 4) Dicord

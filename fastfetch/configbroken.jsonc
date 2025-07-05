@@ -1,0 +1,54 @@
+{
+  // Theme based on pywal output
+  "display": {
+    "separator": ""
+  },
+  "logo": {
+    "type": "kitty", // You can also use "ascii" or "sixel"
+    "color": "wal"   // Tell fastfetch to use pywal color for logo
+  },
+  "colors": {
+    "palette": "wal" // Pulls colors from pywal
+  },
+  "modules": [
+    {
+      "type": "title"
+    },
+    {
+      "type": "os"
+    },
+    {
+      "type": "kernel"
+    },
+    {
+      "type": "uptime"
+    },
+    {
+      "type": "shell"
+    },
+    {
+      "type": "terminal"
+    },
+    {
+      "type": "cpu"
+    },
+    {
+      "type": "gpu"
+    },
+    {
+      "type": "memory"
+    },
+    {
+      "type": "disk"
+    },
+    {
+      "type": "battery"
+    },
+    {
+      "type": "packages"
+    },
+    {
+      "type": "colors"
+    }
+  ]
+}

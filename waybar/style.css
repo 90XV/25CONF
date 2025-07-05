@@ -1,0 +1,139 @@
+/* pywal colors */ 
+@import '../../.cache/wal/colors-waybar.css';
+@define-color ws @color4;
+@define-color tt @color1;
+@define-color clock @color3;
+@define-color set @color4;
+@define-color tb rgba(200,200,200,0.2);
+@define-color tbh @color5;
+@define-color text #FFFFFF;
+@define-color zerocol @color0;
+
+* {
+    font-family: "SF Pro Display", "SF Pro Text", "SF Mono", sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+window#waybar {
+    color: @text;
+    border-radius: 0px;
+    background-color: @zerocol;
+    opacity: 0.7;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+tooltip {
+    background-color: @set;
+    color: @text;
+    font-size: 8px ;
+    border-radius: 32px;
+    border: 1px solid @zerocol;
+}
+
+tooltip label {
+    color:@text;
+    background-color: @sett;
+    opacity: 0.8;
+}
+
+/* taskbar */
+#taskbar {
+    background: @tb;
+    color: @text;
+    margin: 4px 15px 4px 1px;
+    padding: 0px;
+}
+
+#taskbar button {
+    margin: 0px 1px;
+    border-radius: 5px;
+    padding: 0px 5px;
+}
+
+#taskbar button:hover {
+    background: @tbh;
+    opacity: 1;
+    border: none;
+    box-shadow: none;
+}
+
+#workspaces {
+    border-radius: 0px 24px 24px 0px;
+    margin: 0;
+    color: @text;
+    /*background-color: rgba(255, 255, 255, 0.08);*/
+}
+
+#workspaces button {
+    min-width: 8px;
+    min-height: 8px;
+    border-radius: 16px;
+    margin: 2px 0;
+    color: @text;
+    
+}
+
+#workspaces button:not(:last-child) {
+    margin-right: 4px;
+}
+
+#workspaces button:hover {
+    background: @ws;
+    color: @text;
+    border: none;
+    box-shadow: none;
+}
+
+#workspaces button.active,
+#workspaces button.active:hover {
+    background-color: @set;
+    color: @text;
+}
+
+#clock,
+#battery,
+#pulseaudio,
+#wireplumber,
+#network,
+#bluetooth,
+#temperature,
+#workspaces,
+#backlight {
+    padding: 0px 8px;
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+#tray {
+    padding: 0px 8px;
+    color: @text;
+}
+
+#network {
+    /*background-color: @set;*/
+    color: @text;
+    border-radius: 24px 0 0 24px;
+    padding-left: 24px;
+}
+
+#battery, #bluetooth,#temperature,#pulseaudio,#wireplumber{
+  color:@text;
+}
+#battery.warning {
+    color: orange;
+}
+
+#battery.critical {
+    color: red;
+}
+
+#temperature.critical {
+    color: red;
+}
+
+#clock {
+    color: @text;
+    padding-right: 16px;
+    /*border-radius: 0 16px 16px 0;*/
+}

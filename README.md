@@ -1,4 +1,7 @@
 # helia 2025 arch rice
+
+![25CONF](https://github.com/user-attachments/assets/3ba65199-6cd4-47e0-8fa6-5f42bd1f0b4e)
+
 welcome to my 2025 rice repository! feel free to look around at what I use to rice my Arch(btw) install.
 
 THIS IS BASICALLY A FORK OF [Zenities Hyrland](https://github.com/hayyaoe/zenities). 

@@ -1,7 +1,10 @@
 #!/bin/bash
 
 WALLPAPER_DIR="$HOME/Downloads/wallpapers"
-SELECTED_WALLPAPER=$(find "$WALLPAPER_DIR" -type f | wofi --show dmenu)
+SELECTED_WALLPAPER_NAME=$(find "$WALLPAPER_DIR" -type f -printf "%f\n" | wofi --show dmenu)
+SELECTED_WALLPAPER="$WALLPAPER_DIR/$SELECTED_WALLPAPER_NAME"
+
+HYPLOCK_CONF="$HOME/.config/hypr/hyprlock.conf"
 
 if [[ -n "$SELECTED_WALLPAPER" ]]; then
     SYMLINK_CONFIG_FILE="$HOME/.config/hypr/hyprpaper.conf"
@@ -17,6 +20,8 @@ if [[ -n "$SELECTED_WALLPAPER" ]]; then
 
     echo "preload = $SELECTED_WALLPAPER" > "$TARGET_FILE"
     echo "wallpaper =$MONITOR_NAME, $SELECTED_WALLPAPER" >> "$TARGET_FILE"
+    
+    sed -i "s|^\(\s*path = \).*|\1$SELECTED_WALLPAPER|" "$HOME/.config/hypr/hyprlock.conf"
 
     killall hyprpaper 2>/dev/null
     hyprpaper -c "$TARGET_FILE" &

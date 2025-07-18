@@ -15,7 +15,7 @@ I run a Lenovo Thinkpad T450s with an i7-5600U.
 - OS: Arch Linux (obv)
 - DE: Hyprland
 - Term: kitty
-- Shell: bash
+- Shell: bash w/ starship prompt
 ---
 ## WHAT IS NEEDED IN THIS RICE
 1) hyprland stuff - (hyprpaper, hypridle, hyprlock)

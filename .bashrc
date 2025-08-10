@@ -1,7 +1,8 @@
 #
 # ~/.bashrc
 #
-
+[[ $PS1 && -f /usr/share/bash-completion/bash_completion ]] && \
+    . /usr/share/bash-completion/bash_completion
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
@@ -22,3 +23,9 @@ alias back='cd ..'
 alias prev='cd -'
 alias roblox='flatpak run org.vinegarhq.Sober'
 alias show='kitty +kitten icat'
+alias i9='cbonsai --live --infinite --seed 9'
+
+bind 'set show-all-if-ambiguous on'
+
+# Set up fzf key bindings and fuzzy completion
+eval "$(fzf --bash)"

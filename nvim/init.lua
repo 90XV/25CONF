@@ -38,4 +38,6 @@ require("dap-python").setup("~/.virtualenvs/debugpy/bin/python")
 -- If using the above, then `/path/to/venv/bin/python -m debugpy --version`
 -- must work in the shell
 
+vim.api.nvim_set_keymap('n','<C-m>',':botright new | resize 10 | terminal <CR>',opts)
+
 vim.cmd("colorscheme carbonfox")

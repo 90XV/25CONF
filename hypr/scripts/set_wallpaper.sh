@@ -36,6 +36,7 @@ MONITOR_NAME=$(hyprctl monitors | grep "Monitor" | awk '{print $2}')
 
 wal -i "$SELECTED_WALLPAPER"
 cp ~/.cache/wal/colors-kitty.conf ~/.config/kitty/colors.conf
+cp ~/.cache/wal/colors-hyprland ~/.config/hypr/colors.conf
 killall -USR1 kitty
 sleep 1
 
